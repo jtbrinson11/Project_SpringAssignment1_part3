@@ -1,12 +1,13 @@
-package org.SpringAssignment1_part2;
+package org.SpringAssignment1_part3;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Primary
 public class student {
 
     private int id;

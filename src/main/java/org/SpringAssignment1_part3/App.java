@@ -1,13 +1,14 @@
 package org.SpringAssignment1_part3;
 
-/**
- * Hello world!
- *
- */
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        AbstractApplicationContext context  = new AnnotationConfigApplicationContext(AppConfig.class);
+        student stud = (student) context.getBean(student.class);
+        System.out.println(stud);
     }
 }

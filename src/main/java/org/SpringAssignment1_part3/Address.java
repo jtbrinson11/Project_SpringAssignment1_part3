@@ -1,8 +1,10 @@
-package org.SpringAssignment1_part2;
+package org.SpringAssignment1_part3;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+@Primary
 public class Address {
 
     private String city;
